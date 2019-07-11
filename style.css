@@ -1,8 +1,10 @@
+body {
+  margin: 0px;
+}
+
 .header-section {
   background-color: #42aaf5;
-  border-style: solid;
-  border-color: #000000;
-  border-width: 10px;
-  border-radius: 15px;
+  font-family: Trebuchet MS;
   text-align: center;
+  padding: 100px 0px 500px 0px;
 }

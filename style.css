@@ -1,82 +1,110 @@
-body {
-  margin: -34px 0px 0px 0px;
+html {
+  /* Set font size for easy rem calculations
+   * default document font size = 16px, 1rem = 16px, 100% = 16px
+   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+   */
+   font-size: 62.5%;
 }
 
-#header-section {
-  width: 100%;
-  height: 800px;
-  background-color: #003153;
+body {
+  margin: -34px 0px 0px 0px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
 }
 
-#header-section h1 {
-  color: rgb(255, 215, 80);
-  font-style: italic;
-  font-size: 50px;
-  text-align: center;
+/* WELCOME SECTION */
+#intro-section {
+  width: 100%;
+  height: 100vh;
+
+  background-color: #003153;
 }
 
-#header-section hr {
+#intro-header {
+  color: #F0F0F0;
+  font-size: 5rem;
+  text-align: center;
+
   position: relative;
-  bottom: 3%;
+  top: 7%;
+}
+
+#intro-header-underline {
+  position: relative;
+  top: 3%;
   width: 15%;
 }
 
-/* NAVIGATION BAR
-#header-section nav {
-  background-color:  rgb(196, 216, 226);
-  position: fixed;
-  bottom: 875px;
-}
-
-#header-section nav ul {
-  margin: 5px;
-  padding: 5px 0px 5px 30px;
-}
-
-#header-section nav li {
-  display: inline;
-  margin-right: 30px;
-}
-
-#header-section a {
-  color: inherit;
-  text-decoration: none;
-}
-
-#header-section a:hover {
-  text-decoration: underline;
-}
-*/
-
-#header-section img {
+#image-of-me {
   position: relative;
   right: 20%;
+  top: 5%;
+
   display: block;
   margin-left: auto;
   margin-right: auto;
+
   width: 35%;
   height: 60%;
-  border: 10px solid rgb(255, 255, 255);
+
+  border: 10px solid #FFF;
   border-radius: 20%;
 }
 
-#about-me-header {
-  color: rgb(255, 215, 80);
-  font-style: italic;
-  font-size: 50px;
-  position: relative;
-  left: 61%;
-  bottom: 55%;
+/* NAVIGATION BAR */
+#navbar {
+  background-color:  #303841;
+
+  position: fixed;
+
+  width: 100%;
+  z-index: 10;
 }
 
+#navbar ul {
+  margin: 5px;
+
+  padding: 5px 0px 5px 30px;
+}
+
+#navbar li {
+  display: inline;
+
+  margin-right: 3rem;
+}
+
+#navbar a {
+  display: inline;
+
+  font-size: 2.2rem;
+  color: #F0F0F0;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  background-color: #000;
+  border-radius: 10px;
+
+  padding: 5px 5px 5px 5px;
+}
+
+/* ABOUT ME */
 #about-me {
   width: 35%;
   height: 60%;
+
   position: relative;
-  bottom: 58%;
+  bottom: 45%;
   left: 50%;
-  border: 10px solid rgb(255, 255, 255);
+
+  border: 10px solid #FFF;
   border-radius: 20%;
-  background-color: rgb(255, 255, 255);
+  background-color: #FFF;
+}
+
+#about-me-header {
+  text-align: center;
+  color: #303841;
+  font-size: 3rem;
+
+  margin: 0;
 }

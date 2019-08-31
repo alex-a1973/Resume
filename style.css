@@ -1,59 +1,52 @@
+* {
+  padding: 0;
+
+  margin: 0;
+
+  box-sizing: inherit;
+}
+
 html {
+  box-sizing: border-box;
+
   /* Set font size for easy rem calculations
    * default document font size = 16px, 1rem = 16px, 100% = 16px
    * (100% / 16px) * 10 = 62.5% & 16px * 62.5% = 10px
    * 1rem = 10px, 62.5% = 10px
    */
    font-size: 62.5%;
+   scroll-behavior: smooth;
 }
 
 body {
-  margin: -34px 0px 0px 0px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
 }
 
-/* WELCOME SECTION */
-#intro-section {
-  width: 100%;
-  height: 100vh;
-
-  background-color: #003153;
-}
-
-#intro-header {
-  color: #F0F0F0;
+h1 {
   font-size: 5rem;
-  text-align: center;
-
-  position: relative;
-  top: 7%;
 }
 
-#intro-header-underline {
-  position: relative;
-  top: 3%;
-  width: 15%;
+h2 {
+  font-size: 3rem;
 }
 
-#image-of-me {
-  position: relative;
-  right: 20%;
-  top: 5%;
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
 
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-
-  width: 35%;
-  height: 60%;
-
-  border: 10px solid #FFF;
-  border-radius: 20%;
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
 }
 
 /* NAVIGATION BAR */
 #navbar {
-  background-color:  #303841;
+  background-color:  #45567d;
 
   position: fixed;
 
@@ -88,24 +81,103 @@ body {
   padding: 5px 5px 5px 5px;
 }
 
+/* WELCOME SECTION */
+#intro-section {
+  width: 100%;
+  height: 100vh;
+
+  background-color: #003153;
+}
+
+#intro-header {
+  color: #F0F0F0;
+  text-align: center;
+
+  position: relative;
+  top: 7%;
+
+  border-bottom: 0.4rem solid #F0F0F0;
+
+  max-width: 30%;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#image-of-me {
+  position: relative;
+  right: 20%;
+  top: 10%;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 35%;
+  height: 60%;
+
+  border: 10px solid #F0F0F0;
+  border-radius: 20%;
+}
+
 /* ABOUT ME */
 #about-me {
   width: 35%;
   height: 60%;
 
   position: relative;
-  bottom: 45%;
+  bottom: 35%;
   left: 50%;
 
-  border: 10px solid #FFF;
+  border: 10px solid #F0F0F0;
   border-radius: 20%;
-  background-color: #FFF;
+
+  background-color: #F0F0F0;
 }
 
 #about-me-header {
   text-align: center;
   color: #303841;
-  font-size: 3rem;
 
   margin: 0;
+}
+
+#about-me-p1 {
+  font-size: 2rem;
+  color: #303841;
+
+  padding: 15px 15px 15px 15px;
+
+  border-bottom: 0.2rem solid #303841;
+}
+
+#about-me-p2 {
+  font-size: 2rem;
+  color: #303841;
+
+  padding: 15px 15px 15px 15px;
+}
+
+/* EDUCATION SECTION */
+#education-section {
+  width: 100%;
+  height: 100vh;
+
+  background-color: #303841;
+
+  color: #F0F0F0;
+}
+
+#education-header {
+  text-align: center;
+
+  border-bottom: 0.4rem solid #F0F0F0;
+
+  max-width: 40%;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  position: relative;
+  top: 7%;
 }

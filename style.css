@@ -30,6 +30,10 @@ h2 {
   font-size: 3rem;
 }
 
+p {
+  font-size: 2rem;
+}
+
 /* 1200px / 16px = 75em */
 @media (max-width: 75em) {
   html {
@@ -143,7 +147,6 @@ h2 {
 }
 
 #about-me-p1 {
-  font-size: 2rem;
   color: #303841;
 
   padding: 15px 15px 15px 15px;
@@ -152,7 +155,6 @@ h2 {
 }
 
 #about-me-p2 {
-  font-size: 2rem;
   color: #303841;
 
   padding: 15px 15px 15px 15px;
@@ -180,4 +182,262 @@ h2 {
 
   position: relative;
   top: 7%;
+}
+
+#education-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 60vh;
+  grid-gap: 0 40px;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  position: relative;
+  top: 15%;
+
+  width: 90%;
+}
+
+#education-container > div {
+  background-color: #FFF;
+
+  border-radius: 20px;
+
+  padding: 10px 10px 10px 10px;
+}
+
+#UW-image {
+  border-radius: 50%;
+
+  height: 40%;
+
+  display: block;
+
+  position: absolute;
+  top: 10%;
+}
+
+#UW-info-container {
+  width: 25%;
+  height: 75%;
+
+  position: absolute;
+  top: 10%;
+  left: 20%;
+}
+
+#UW-info-container > ul {
+  list-style-type: none;
+
+  color: #303841;
+  font-size: 2rem;
+}
+
+#UW-info-container > ul > li {
+  padding: 0 0 10% 0;
+}
+
+#SPSCC-image {
+  border-radius: 50%;
+
+  height: 40%;
+
+  display: block;
+  
+  position: absolute;
+  top: 10%;
+}
+
+#SPSCC-info-container {
+  width: 25%;
+  height: 75%;
+  
+  position: absolute;
+  top: 10%;
+  left: 72%;
+}
+
+#SPSCC-info-container > ul {
+  list-style-type: none;
+
+  color: #303841;
+  font-size: 2rem;
+}
+
+#SPSCC-info-container > ul > li {
+  padding: 0 0 10% 0;
+}
+
+.info-categories {
+  font-weight: 1000;
+}
+
+/* PROJECTS SECTION */
+#projects-section {
+  width: 100%;
+  height: 100vh;
+
+  background-color: #be3144;
+
+  color: #F0F0F0;
+}
+
+#projects-header {
+  text-align: center;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  border-bottom: 0.4rem solid #F0F0F0;
+
+  max-width: 550px; 
+
+  position: relative;
+  top: 7%;
+}
+
+#projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50vh;
+  grid-gap: 0 50px;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  width: 90%;
+
+  position: relative;
+  top: 18%;
+}
+
+#galaga-project {
+  background-color: #303841;
+}
+
+#galaga-header {
+  color: #F0F0F0;
+
+  transform: rotate(-90deg);
+
+  letter-spacing: 10px;
+
+  position: absolute;
+  top: 15%;
+  left: -3%;
+}
+
+#galaga-image {
+  height: 100%;
+  width: 85%;
+
+  float: right;
+}
+
+#pong-project {
+  background-color: #303841;
+}
+
+#pong-header {
+  color: #F0F0F0;
+
+  letter-spacing: 10px;
+
+  transform: rotate(-90deg);
+
+  position: absolute;
+  top: 8%;
+  left: 33%;
+}
+
+#pong-image {
+  height: 100%;
+  width: 85%;
+
+  float: right;
+}
+
+#aml-project {
+  background-color: #303841;
+}
+
+#aml-header {
+  color: #F0F0F0;
+
+  letter-spacing: 10px;
+
+  transform: rotate(-90deg);
+
+  position: absolute;
+  top: 37%;
+  left: 60%;
+}
+
+#aml-image {
+  height: 100%;
+  width: 85%;
+
+  float: right;
+}
+
+/* CONTACT SECTION */
+#contact-section {
+  width: 100%;
+  height: 40vh;
+
+  background-image: linear-gradient(#be3144, #003153);
+}
+
+#contact-header {
+  font-style: italic;
+  color: #F0F0F0;
+
+  text-align: center;
+}
+
+#contact-links-container {
+  display: flex;
+  justify-content: center;
+}
+
+#contact-links-container > div {
+  margin: 50px 10px 0 10px;
+}
+
+.contact-images {
+  width: 80px;
+  height: 80px;
+
+  border-radius: 50%;
+}
+
+#phone {
+  border-radius: 50%;
+}
+
+.phone-number {
+  visibility: hidden;
+
+  position: absolute;
+
+  padding: 10px 10px 10px 10px;
+
+  background-color: #F0F0F0;
+
+  color: #45567d;
+  text-align: center;
+
+  border-radius: 6px;
+
+  z-index: 1;
+
+  opacity: 0;
+  transition: 1s opacity;
+}
+
+#phone:hover .phone-number {
+  opacity: 1;
+
+  visibility: visible;
 }
